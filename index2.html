@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM Global Conseil | Assistance, Organisation & RH</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Translations -->
+    <script src="translations/fr.js"></script>
+    <script src="translations/en.js"></script>
+    <script src="translations/ar.js"></script>
+    <script src="translations/kab.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#" class="nav-logo">
+            <img src="logo.png" alt="HM Global Conseil Logo">
+        </a>
+        <div style="display: flex; align-items: center;">
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil" data-i18n="nav_home">Accueil</a></li>
+                <li><a href="#apropos" data-i18n="nav_about">À propos</a></li>
+                <li><a href="#services" data-i18n="nav_services">Nos Services</a></li>
+                <li><a href="#equipe" data-i18n="nav_team">Équipe</a></li>
+                <li><a href="#partenariats" data-i18n="nav_partners">Partenariats</a></li>
+                <li><a href="#temoignages" data-i18n="nav_testimonials">Témoignages</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+
+            <div class="lang-switcher">
+                <button class="lang-btn" onclick="toggleLangDropdown()">
+                    <span id="current-lang-flag">🇫🇷</span>
+                    <span id="current-lang-code">FR</span>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <div class="lang-option" onclick="setLanguage('fr')"><span>🇫🇷</span> Français</div>
+                    <div class="lang-option" onclick="setLanguage('en')"><span>🇬🇧</span> English</div>
+                    <div class="lang-option" onclick="setLanguage('ar')"><span>🇩🇿</span> العربية</div>
+                    <div class="lang-option" onclick="setLanguage('kab')"><span>🏔️</span> Tamazight</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="accueil" class="hero">
+        <img src="logo.png" alt="HM Global Conseil Logo" class="hero-logo">
+        <p data-i18n="hero_description">Nous transformons vos contraintes administratives en solutions simples et
+            efficaces. Bureau d'assistance
+            administrative et conseil en organisation et ressources humaines.</p>
+        <div class="hero-buttons">
+            <a href="#services" class="btn" data-i18n="hero_btn_services">Découvrir nos services</a>
+            <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_contact">Nous contacter</a>
+        </div>
+    </section>
+
+    <section id="apropos">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="about_title">Notre Cabinet</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p data-i18n="about_p1">HM Global Conseil est votre partenaire administratif & RH. Face aux constats
+                    actuels tels que le
+                    besoin d'accompagnement pour les particuliers et les entreprises, nous vous apportons des solutions
+                    sur mesure.</p>
+                <p data-i18n="about_p2">Notre atout distinctif : un correspondant basé en France, mobilisé sur le
+                    terrain pour accomplir vos
+                    démarches avec rigueur et réactivité. Notre objectif est de simplifier vos démarches et de
+                    structurer votre performance, que vous soyez une PME en croissance, une startup, un groupe privé ou
+                    une filiale de multinationale.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-box">
+                    <div class="stat-number">2</div>
+                    <div data-i18n="stat_publics">Publics : Particuliers & Entreprises</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">🤝</div>
+                    <div data-i18n="stat_network">Réseau de partenaires</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="services_title">Nos Domaines d'Expertise</h2>
+            <!-- Particuliers Section -->
+            <div class="services-container">
+                <h3 class="services-main-title" data-i18n="particuliers_main_title">Services aux Particuliers 👤</h3>
+
+                <div class="services-grid">
+                    <!-- Pole 1 -->
+                    <div class="service-card">
+                        <h4 data-i18n="p_title_1">DÉMARCHES & VISAS</h4>
+                        <ul class="service-list">
+                            <li data-i18n="p_item_1_1">Aide à la constitution de dossiers</li>
+                            <li data-i18n="p_item_1_2">Vérification des pièces</li>
+                            <li data-i18n="p_item_1_3">Prise de rendez-vous consulaires</li>
+                            <li data-i18n="p_item_1_4">Suivi des demandes</li>
+                            <li data-i18n="p_item_1_5">Assistance administrative générale</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pole 2 -->
+                    <div class="service-card">
+                        <h4 data-i18n="p_title_2">RECOURS & DROIT</h4>
+                        <ul class="service-list">
+                            <li data-i18n="p_item_2_1">Rédaction de recours</li>
+                            <li data-i18n="p_item_2_2">Dossiers de contestation</li>
+                            <li data-i18n="p_item_2_3">Orientation vers avocats</li>
+                            <li data-i18n="p_item_2_4">Suivi des procédures</li>
+                            <li data-i18n="p_item_2_5">Lecture et analyse de dossier</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pole 3 -->
+                    <div class="service-card">
+                        <h4 data-i18n="p_title_3">RETRAITE & DROITS SOCIAUX</h4>
+                        <ul class="service-list">
+                            <li data-i18n="p_item_3_1">Pension de réversion</li>
+                            <li data-i18n="p_item_3_2">Reconstitution de carrière</li>
+                            <li data-i18n="p_item_3_3">Suivi avec organismes (FR/DZ)</li>
+                            <li data-i18n="p_item_3_4">Conseil sur les droits sociaux</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pole 4 -->
+                    <div class="service-card">
+                        <h4 data-i18n="p_title_4">LOGEMENT & IMMOBILIER</h4>
+                        <ul class="service-list">
+                            <li data-i18n="p_item_4_1">Recherche de logement (DZ/FR)</li>
+                            <li data-i18n="p_item_4_2">Location de vacances</li>
+                            <li data-i18n="p_item_4_3">Assistance à l'installation & Déménagement</li>
+                            <li data-i18n="p_item_4_4">Gestion locative & Entretien</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pole 5 -->
+                    <div class="service-card">
+                        <h4 data-i18n="p_title_5">TRANSPORT & MOBILITÉ</h4>
+                        <ul class="service-list">
+                            <li data-i18n="p_item_5_1">Réservations avions et trains</li>
+                            <li data-i18n="p_item_5_2">Organisation bagages & Transferts</li>
+                            <li data-i18n="p_item_5_3">Location de véhicules</li>
+                            <li data-i18n="p_item_5_4">Accueil VIP gares & aéroports</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pole 6 -->
+                    <div class="service-card">
+                        <h4 data-i18n="p_title_6">CONCIERGERIE & ÉVÉNEMENTIEL</h4>
+                        <ul class="service-list">
+                            <li data-i18n="p_item_6_1">Accueil & Chauffeur privé</li>
+                            <li data-i18n="p_item_6_2">Assistance locale & Guide</li>
+                            <li data-i18n="p_item_6_3">Logistique événementielle</li>
+                            <li data-i18n="p_item_6_4">Réservation hôtels & loisirs</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pole 7 -->
+                    <div class="service-card">
+                        <h4 data-i18n="p_title_7">ASSISTANCE MÉDICALE</h4>
+                        <ul class="service-list">
+                            <li data-i18n="p_item_7_1">Rendez-vous médicaux</li>
+                            <li data-i18n="p_item_7_2">Déplacements & Hébergement</li>
+                            <li data-i18n="p_item_7_3">Coordination santé & Suivi</li>
+                            <li data-i18n="p_item_7_4">Assistance hospitalisation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pole 8 -->
+                    <div class="service-card">
+                        <h4 data-i18n="p_title_8">RÉDACTION & ASSISTANCE</h4>
+                        <ul class="service-list">
+                            <li data-i18n="p_item_8_1">Courriers administratifs</li>
+                            <li data-i18n="p_item_8_2">Lettres de motivation & CV</li>
+                            <li data-i18n="p_item_8_3">Réclamations & Corrections</li>
+                            <li data-i18n="p_item_8_4">Aide à la rédaction de contrats</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pole 9 -->
+                    <div class="service-card">
+                        <h4 data-i18n="p_title_9">GESTION DOCUMENTAIRE</h4>
+                        <ul class="service-list">
+                            <li data-i18n="p_item_9_1">Actes (naissance, mariage...)</li>
+                            <li data-i18n="p_item_9_2">Recherche de documents en France</li>
+                            <li data-i18n="p_item_9_3">Numérisation sécurisée & Archivage</li>
+                            <li data-i18n="p_item_9_4">Envoi sécurisé de documents</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: 4rem 0; border-bottom: 2px dashed var(--secondary-gold); opacity: 0.3;"></div>
+
+            <!-- Entreprises Section -->
+            <div class="services-container">
+                <h3 class="services-main-title" data-i18n="entreprises_main_title">Offres de Services Entreprises 🏢
+                </h3>
+                <div class="services-grid">
+                    <!-- Pole 1 -->
+                    <div class="service-card">
+                        <h4 data-i18n="entreprises_p1_title">CONSEIL EN ORGANISATION & RH</h4>
+                        <ul class="service-list">
+                            <li data-i18n="entreprises_p1_item1">Audit et diagnostic organisationnel</li>
+                            <li data-i18n="entreprises_p1_item2">Conseil en organisation</li>
+                            <li data-i18n="entreprises_p1_item3">Structuration interne</li>
+                            <li data-i18n="entreprises_p1_item4">Optimisation des processus</li>
+                            <li data-i18n="entreprises_p1_item5">Préconisation avec plan d’actions</li>
+                            <li data-i18n="entreprises_p1_item6">Expertise Ressources Humaines</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pole 2 -->
+                    <div class="service-card">
+                        <h4 data-i18n="entreprises_p2_title">RECRUTEMENT & FORMATION</h4>
+                        <ul class="service-list">
+                            <li data-i18n="entreprises_p2_item1">Analyse des besoins & Profilage</li>
+                            <li data-i18n="entreprises_p2_item2">Sourcing et recrutement sur mesure</li>
+                            <li data-i18n="entreprises_p2_item3">Sélection rigoureuse des candidats</li>
+                            <li data-i18n="entreprises_p2_item4">Formation management & Leadership</li>
+                            <li data-i18n="entreprises_p2_item5">Coaching professionnel & Accompagnement</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pole 3 -->
+                    <div class="service-card">
+                        <h4 data-i18n="entreprises_p3_title">MOBILITÉ PRO & CONCIERGERIE BUSINESS</h4>
+                        <ul class="service-list">
+                            <li data-i18n="entreprises_p3_item1">Réservation de voyages professionnels</li>
+                            <li data-i18n="entreprises_p3_item2">Réservation d’hôtels & Logement pro</li>
+                            <li data-i18n="entreprises_p3_item3">Accueil VIP et assistance aéroport</li>
+                            <li data-i18n="entreprises_p3_item4">Service chauffeur & Transferts sécurisés</li>
+                            <li data-i18n="entreprises_p3_item5">Logistique déplacements France / Algérie</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pole 4 -->
+                    <div class="service-card">
+                        <h4 data-i18n="entreprises_p4_title">LOGISTIQUE & TRANSPORT INTERNATIONAL</h4>
+                        <ul class="service-list">
+                            <li data-i18n="entreprises_p4_item1">Recherche de transporteurs (France / Algérie)</li>
+                            <li data-i18n="entreprises_p4_item2">Coordination logistique internationale</li>
+                            <li data-i18n="entreprises_p4_item3">Mise en relation avec experts transport</li>
+                            <li data-i18n="entreprises_p4_item4">Suivi rigoureux des prestations logistiques</li>
+                            <li data-i18n="entreprises_p4_item5">Conseil en optimisation import/export</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pole 5 -->
+                    <div class="service-card">
+                        <h4 data-i18n="entreprises_p5_title">ÉVÉNEMENTIEL PROFESSIONNEL</h4>
+                        <ul class="service-list">
+                            <li data-i18n="entreprises_p5_item1">Recherche de prestataires événementiels</li>
+                            <li data-i18n="entreprises_p5_item2">Organisation de séminaires et réunions</li>
+                            <li data-i18n="entreprises_p5_item3">Réservation de salles & Équipements</li>
+                            <li data-i18n="entreprises_p5_item4">Coordination logistique des événements</li>
+                            <li data-i18n="entreprises_p5_item5">Expertise terrain & Suivi opérationnel</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <section id="valeurs">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="commitments_title">Nos Engagements</h2>
+        </div>
+        <div class="values-grid">
+            <div class="value-item">
+                <div class="value-icon">🌍</div>
+                <h4 data-i18n="value1_title">Présence Terrain</h4>
+                <p data-i18n="value1_desc">Un correspondant basé en France, mobilisé pour vous.</p>
+            </div>
+            <div class="value-item">
+                <div class="value-icon">🎯</div>
+                <h4 data-i18n="value2_title">Rigueur & Réactivité</h4>
+                <p data-i18n="value2_desc">Nous accomplissons vos démarches avec un haut niveau d'exigence et de
+                    rapidité.</p>
+            </div>
+            <div class="value-item">
+                <div class="value-icon">🤝</div>
+                <h4 data-i18n="value3_title">Réseau d'Experts</h4>
+                <p data-i18n="value3_desc">Un partenariat fort avec des avocats, des notaires et des institutions
+                    internationales.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team Section -->
+    <section id="equipe" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="team_title">PRÉSENTATION DE L’ÉQUIPE PROJET</h2>
+            </div>
+            <div class="team-grid">
+                <!-- Role 1 -->
+                <div class="team-card">
+                    <div class="team-icon">🏢</div>
+                    <h3 data-i18n="team_role_1_title">Direction opérationnelle</h3>
+                    <p data-i18n="team_role_1_desc">Le fonctionnement et la coordination des activités...</p>
+                </div>
+                <!-- Role 2 -->
+                <div class="team-card">
+                    <div class="team-icon">🇩🇿🇫🇷</div>
+                    <h3 data-i18n="team_role_2_title">Représentation & accompagnement en France</h3>
+                    <p data-i18n="team_role_2_desc">HM Global Conseil dispose également d’un représentant dédié en
+                        France...</p>
+                </div>
+                <!-- Role 3 -->
+                <div class="team-card">
+                    <div class="team-icon">📋</div>
+                    <h3 data-i18n="team_role_3_title">Équipe d’analyse & de gestion des dossiers</h3>
+                    <p data-i18n="team_role_3_desc">Une équipe de professionnels qualifiés assure quotidiennement...</p>
+                </div>
+                <!-- Role 4 -->
+                <div class="team-card">
+                    <div class="team-icon">⚖️</div>
+                    <h3 data-i18n="team_role_4_title">Encadrement juridique & accompagnement spécialisé</h3>
+                    <p data-i18n="team_role_4_desc">HM Global Conseil s’appuie sur une équipe de juristes partenaires...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="temoignages">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="testimonials_title">Témoignages</h2>
+        </div>
+        <div class="testimonials-carousel">
+            <div class="testimonials-stage" id="testimonial-stage">
+                <!-- Testimonials will be injected here by JS -->
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn" onclick="prevTestimonials()">‹</button>
+                <div class="carousel-dots" id="carousel-dots">
+                    <!-- Dots will be injected here by JS -->
+                </div>
+                <button class="carousel-btn" onclick="nextTestimonials()">›</button>
+            </div>
+            <div class="carousel-progress-wrap">
+                <div class="carousel-progress-bar" id="carousel-progress"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partenariats">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="partnerships_title">Nos Partenariats</h2>
+        </div>
+        <div class="partners-grid">
+            <div class="partner-card"><span class="partner-icon">⚖️</span>
+                <p data-i18n="partner_item1">Experts juridiques</p>
+            </div>
+            <div class="partner-card"><span class="partner-icon">📊</span>
+                <p data-i18n="partner_item2">Cabinets comptables</p>
+            </div>
+            <div class="partner-card"><span class="partner-icon">📜</span>
+                <p data-i18n="partner_item3">Avocats & Notaires</p>
+            </div>
+            <div class="partner-card"><span class="partner-icon">🏢</span>
+                <p data-i18n="partner_item4">Chambres de commerce</p>
+            </div>
+            <div class="partner-card"><span class="partner-icon">🚗</span>
+                <p data-i18n="partner_item5">Location voitures</p>
+            </div>
+            <div class="partner-card"><span class="partner-icon">✈️</span>
+                <p data-i18n="partner_item6">Agences de voyage</p>
+            </div>
+            <div class="partner-card"><span class="partner-icon">🏠</span>
+                <p data-i18n="partner_item7">Agences immobilières</p>
+            </div>
+            <div class="partner-card"><span class="partner-icon">🗣️</span>
+                <p data-i18n="partner_item8">Traducteurs assermentés</p>
+            </div>
+            <div class="partner-card"><span class="partner-icon">🏨</span>
+                <p data-i18n="partner_item9">Hôtels & Résidences</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="contact_title">Parlons de vos projets</h2>
+        </div>
+        <div class="contact-container" style="justify-content: center;">
+            <div class="contact-info" style="max-width: 600px; text-align: center;">
+                <h3 data-i18n="contact_subtitle">Contactez-nous</h3>
+                <p data-i18n="contact_description">Prêt à optimiser la gestion de votre entreprise ou à simplifier vos
+                    démarches personnelles ?</p>
+                <p><strong data-i18n="contact_director">Gérant :</strong> Mustafa BARR</p>
+                <p><strong>Email :</strong> hmglobalconseil@gmail.com</p>
+                <p><strong>Téléphone :</strong> 05.56.54.47.04</p>
+                <p><strong>WhatsApp :</strong> +213.551.03.82.94</p>
+                <div style="display: flex; justify-content: center; margin-top: 1rem;">
+                    <a href="https://wa.me/213551038294" class="whatsapp-btn" target="_blank">
+                        <span data-i18n="btn_whatsapp">Discuter sur WhatsApp</span>
+                    </a>
+                </div>
+
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.3617680990446!2d4.2657695!3d36.3520152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128c5b00591c6461%3A0xab6868b5807d4190!2sHM%20Global%20Conseil!5e0!3m2!1sen!2sfr!4v1778344179576!5m2!1sen!2sfr"
+                        width="100%" height="300" style="border:0; border-radius: 10px; margin-top: 2rem;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="HM Global Conseil Logo">
+            </div>
+            <div>
+                <p style="margin-bottom: 0.5rem; color: var(--primary-navy);" data-i18n="footer_service1">Assistance
+                    Particuliers</p>
+                <p style="margin-bottom: 0.5rem; color: var(--primary-navy);" data-i18n="footer_service2">Conseil en
+                    Organisation</p>
+                <p style="color: var(--primary-navy);" data-i18n="footer_service3">Ressources Humaines & Recrutement</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2026 HM Global Conseil. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        const allTranslations = {
+            fr: translationsFr,
+            en: translationsEn,
+            ar: translationsAr,
+            kab: translationsKab
+        };
+
+        let currentLanguage = 'fr';
+        let testimonialIndex = 0;
+        const testimonialsPerPage = 3;
+        const totalTestimonials = 10;
+        let autoFlipInterval;
+
+        function toggleLangDropdown() {
+            document.getElementById('langDropdown').classList.toggle('show');
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.lang-btn') && !event.target.closest('.lang-btn')) {
+                const dropdowns = document.getElementsByClassName("lang-dropdown");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        function renderTestimonials() {
+            const stage = document.getElementById('testimonial-stage');
+            const dotsContainer = document.getElementById('carousel-dots');
+            const trans = allTranslations[currentLanguage];
+
+            // For mobile, we might want 1 per page, but for now let's stick to 3 or dynamic
+            const perPage = window.innerWidth <= 900 ? 1 : 3;
+            const numPages = Math.ceil(totalTestimonials / perPage);
+
+            // Adjust testimonialIndex if out of bounds
+            if (testimonialIndex >= numPages) testimonialIndex = 0;
+
+            stage.classList.add('fade-out');
+
+            setTimeout(() => {
+                stage.innerHTML = '';
+                const start = testimonialIndex * perPage;
+                const end = Math.min(start + perPage, totalTestimonials);
+
+                for (let i = start; i < end; i++) {
+                    const num = i + 1;
+                    const card = document.createElement('div');
+                    card.className = 'testimonial-card';
+                    card.innerHTML = `
+                        <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
+                        <p class="testimonial-text">${trans[`testimonial${num}_text`] || trans[`testimonial1_text`]}</p>
+                        <p class="testimonial-author">— ${trans[`testimonial${num}_author`] || '...'}</p>
+                    `;
+                    stage.appendChild(card);
+                }
+
+                // Render Dots
+                dotsContainer.innerHTML = '';
+                for (let i = 0; i < numPages; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = `carousel-dot ${i === testimonialIndex ? 'active' : ''}`;
+                    dot.onclick = () => {
+                        testimonialIndex = i;
+                        renderTestimonials();
+                        resetInterval();
+                    };
+                    dotsContainer.appendChild(dot);
+                }
+
+                stage.classList.remove('fade-out');
+                stage.classList.add('fade-in');
+            }, 400);
+        }
+
+        function nextTestimonials() {
+            const perPage = window.innerWidth <= 900 ? 1 : 3;
+            const numPages = Math.ceil(totalTestimonials / perPage);
+            testimonialIndex = (testimonialIndex + 1) % numPages;
+            renderTestimonials();
+            resetInterval();
+        }
+
+        function prevTestimonials() {
+            const perPage = window.innerWidth <= 900 ? 1 : 3;
+            const numPages = Math.ceil(totalTestimonials / perPage);
+            testimonialIndex = (testimonialIndex - 1 + numPages) % numPages;
+            renderTestimonials();
+            resetInterval();
+        }
+
+        function startProgressBar() {
+            const bar = document.getElementById('carousel-progress');
+            if (!bar) return;
+            bar.style.transition = 'none';
+            bar.style.width = '0%';
+            // Force reflow to reset transition
+            void bar.offsetWidth;
+            bar.style.transition = 'width 7s linear';
+            bar.style.width = '100%';
+        }
+
+        function resetInterval() {
+            clearInterval(autoFlipInterval);
+            startProgressBar();
+            autoFlipInterval = setInterval(nextTestimonials, 7000);
+        }
+
+        function setLanguage(lang) {
+            currentLanguage = lang;
+            const html = document.documentElement;
+            html.setAttribute('lang', lang);
+
+            if (lang === 'ar') {
+                html.setAttribute('dir', 'rtl');
+            } else {
+                html.setAttribute('dir', 'ltr');
+            }
+
+            const translations = allTranslations[lang];
+            if (!translations) {
+                console.error("Translations not found for:", lang);
+                return;
+            }
+
+            // Update text content
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[key]) {
+                    el.innerText = translations[key];
+                }
+            });
+
+            // Update placeholders
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (translations[key]) {
+                    el.setAttribute('placeholder', translations[key]);
+                }
+            });
+
+            // Update current language display
+            const codes = { fr: 'FR', en: 'EN', ar: 'ع', kab: 'KB' };
+            const flags = { fr: '🇫🇷', en: '🇬🇧', ar: '🇩🇿', kab: '🏔️' };
+            document.getElementById('current-lang-code').innerText = codes[lang];
+            document.getElementById('current-lang-flag').innerText = flags[lang];
+
+            localStorage.setItem('preferredLang', lang);
+            document.getElementById('langDropdown').classList.remove('show');
+
+            renderTestimonials();
+        }
+
+        // Initialize language
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferredLang') || 'fr';
+            setLanguage(savedLang);
+            resetInterval();
+        });
+
+        window.onresize = renderTestimonials;
+    </script>
+</body>
+
+<script>
+    function toggleMobileMenu() {
+        const navLinks = document.getElementById('navLinks');
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+
+        navLinks.classList.toggle('active');
+
+        if (navLinks.classList.contains('active')) {
+            mobileBtn.innerHTML = '✕';
+            document.body.style.overflow = 'hidden';
+        } else {
+            mobileBtn.innerHTML = '☰';
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    // Close menu when clicking any link
+    document.addEventListener('click', function (e) {
+        const navLinks = document.getElementById('navLinks');
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+
+        if (navLinks && navLinks.classList.contains('active')) {
+            if (e.target.tagName === 'A' || (!navLinks.contains(e.target) && !mobileBtn.contains(e.target))) {
+                navLinks.classList.remove('active');
+                mobileBtn.innerHTML = '☰';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    });
+</script>
+</body>
+
+</html>
