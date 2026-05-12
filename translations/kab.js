@@ -5,6 +5,7 @@ const translationsKab = {
     "nav_testimonials": "Inigan",
     "nav_contact": "Anermis",
     "hero_description": "Nettbeddil iɛewwiqen-nwen n udabbu d ifrat tishal. Takubanit n uɛiwen n udabbu d usiwel n tuddsa d tirmad n yemdanen.",
+    "hero_title": "HM Global Conseil",
     "hero_btn_services": "Wali tinezduɣin-nneɣ",
     "hero_btn_contact": "Nermest-aneɣ",
     "about_title": "Takubanit-nneɣ",
@@ -74,5 +75,8 @@ const translationsKab = {
     "footer_service1": "Aɛiwen i Yemdanen",
     "footer_service2": "Ukyes n Tuddsa",
     "footer_service3": "RH d Usedder",
-    "footer_copyright": "© 2026 HM Global Conseil. Izerfan iḥerzen."
+    "footer_copyright": "© 2026 HM Global Conseil. Izerfan iḥerzen.",
+    "seo_title": "HM Global Conseil | Aɛiwen n udabbu, Tuddsa d RH",
+    "seo_description": "HM Global Conseil: Takubanit n uɛiwen n udabbu, tuddsa d RH deg Fransa d Lezzayer. Ifat n tmetti i yemdanen d tkubanit.",
+    "seo_keywords": "aɛiwen n udabbu, tuddsa, RH, tirmad n yemdanen, lvisas, taryat, usedder, Fransa, Lezzayer, HM Global Conseil"
 };

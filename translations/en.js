@@ -7,6 +7,7 @@ const translationsEn = {
     "nav_testimonials": "Testimonials",
     "nav_contact": "Contact",
     "hero_description": "We transform your administrative constraints into simple and effective solutions. Bureau of administrative assistance and consulting in organization and human resources.",
+    "hero_title": "HM Global Conseil",
     "hero_btn_services": "Discover our services",
     "hero_btn_contact": "Contact us",
     "about_title": "Our Firm",
@@ -169,4 +170,7 @@ const translationsEn = {
     "team_role_3_desc": "A team of qualified professionals daily ensures the reception, study, and analysis of client requests to direct each file towards the most suitable solutions. Thanks to a personalized approach and attentive listening to needs, HM Global Conseil guarantees serious, structured, and efficient support at every step of the process.",
     "team_role_4_title": "Legal Oversight & Specialized Support",
     "team_role_4_desc": "HM Global Conseil relies on a team of partner legal experts in Algeria and France to ensure rigorous oversight of files requiring specific legal or regulatory expertise. This collaboration allows for professional, secure analysis in compliance with current regulations.",
+    "seo_title": "HM Global Conseil | Administrative Assistance, Organization & HR",
+    "seo_description": "HM Global Conseil: Expert in administrative assistance, organizational consulting and human resources in France and Algeria. Custom solutions for individuals and businesses.",
+    "seo_keywords": "administrative assistance, organizational consulting, HR, human resources, visas, retirement, recruitment, France, Algeria, HM Global Conseil"
 };

@@ -7,6 +7,7 @@ const translationsFr = {
     "nav_testimonials": "Témoignages",
     "nav_contact": "Contact",
     "hero_description": "Nous transformons vos contraintes administratives en solutions simples et efficaces. Bureau d'assistance administrative et conseil en organisation et ressources humaines.",
+    "hero_title": "HM Global Conseil",
     "hero_btn_services": "Découvrir nos services",
     "hero_btn_contact": "Nous contacter",
     "about_title": "Notre Cabinet",
@@ -169,4 +170,7 @@ const translationsFr = {
     "team_role_3_desc": "Une équipe de professionnels qualifiés assure quotidiennement la réception, l’étude et l’analyse des demandes clients afin d’orienter chaque dossier vers les solutions les plus adaptées. Grâce à une approche personnalisée et à une écoute attentive des besoins, HM Global Conseil garantit un accompagnement sérieux, structuré et efficace à chaque étape des démarches.",
     "team_role_4_title": "Encadrement juridique & accompagnement spécialisé",
     "team_role_4_desc": "HM Global Conseil s’appuie sur une équipe de juristes partenaires en Algérie et en France afin d’assurer un encadrement rigoureux des dossiers nécessitant une expertise juridique ou réglementaire spécifique. Cette collaboration permet d’apporter une analyse professionnelle, sécurisée et conforme aux réglementations en vigueur.",
+    "seo_title": "HM Global Conseil | Assistance Administrative, Organisation & RH",
+    "seo_description": "HM Global Conseil : Expert en assistance administrative, conseil en organisation et ressources humaines en France et en Algérie. Solutions sur mesure pour particuliers et entreprises.",
+    "seo_keywords": "assistance administrative, conseil organisation, RH, ressources humaines, visas, retraite, recrutement, France, Algérie, HM Global Conseil"
 };
