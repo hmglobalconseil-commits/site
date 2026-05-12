@@ -56,7 +56,7 @@ const translationsFr = {
     "p_item_6_3": "Logistique événementielle",
     "p_item_6_4": "Réservation hôtels & loisirs",
 
-    "p_title_7": "ASSISTANCE MÉDICALE",
+    "p_title_7": "ASSISTANCE Administrative MÉDICALE",
     "p_item_7_1": "Rendez-vous médicaux",
     "p_item_7_2": "Déplacements & Hébergement",
     "p_item_7_3": "Coordination santé & Suivi",

@@ -56,7 +56,7 @@ const translationsEn = {
     "p_item_6_3": "Event logistics",
     "p_item_6_4": "Hotel & Leisure booking",
 
-    "p_title_7": "MEDICAL ASSISTANCE",
+    "p_title_7": "ADMINISTRATIVE MEDICAL ASSISTANCE",
     "p_item_7_1": "Medical appointments",
     "p_item_7_2": "Travel & Accommodation",
     "p_item_7_3": "Health coordination & Follow-up",
