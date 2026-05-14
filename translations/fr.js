@@ -158,7 +158,9 @@ const translationsFr = {
     "partner_item7": "Agences immobilières",
     "partner_item8": "Traducteurs assermentés",
     "partner_item9": "Hôtels et résidences",
-    "contact_director": "Gérant :",
+    "contact_director": "Directeur :",
+    "contact_address_label": "Adresse :",
+    "contact_address": "37 Rue Ouarab Yahia, Bouaklane, M'Chedallah (à proximité du laboratoire d'analyses)",
     "btn_whatsapp": "💬 Discuter sur WhatsApp",
 
     "team_title": "PRÉSENTATION DE L’ÉQUIPE PROJET",

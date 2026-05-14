@@ -159,7 +159,9 @@ const translationsAr = {
     "partner_item7": "وكالات عقارية",
     "partner_item8": "مترجمون محلفون",
     "partner_item9": "فنادق وإقامات",
-    "contact_director": "المسير:",
+    "contact_director": "المدير:",
+    "contact_address_label": "العنوان:",
+    "contact_address": "37 نهج وعراب يحيى، بواكلان، مشد الله (بالقرب من مخبر التحاليل)",
     "btn_whatsapp": "💬 تحدث معنا عبر واتساب",
 
     "team_title": "عرض فريق المشروع",
